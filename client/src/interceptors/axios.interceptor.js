@@ -1,12 +1,12 @@
 import { apiRoute } from "../services/api.config";
-import { getValidationError } from "../utils/get-validation-error-js";
-import { SnackbarUtilities } from "../utils/snackbar-manager";
+import { getValidationError } from "../utils/get-validation-error";
+import { SnackbarUtilities } from "../utils/snackbar-management";
 
 export const AxiosInterceptor = () => {
   const updateHeader = (request) => {
-    const token = "9817239172"; // localStorage.getItem("token");
+    const token = JSON.parse(localStorage.getItem("token"));
     const newHeaders = {
-      Authorization: token,
+      Authorization: `Bearer ${token.token}`,
       "Content-Type": "application/json",
       "Access-Controller-Allow-Origin": "*",
     };
