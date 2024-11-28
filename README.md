@@ -12,18 +12,11 @@ Wireframes: `assets/wireframes.png`
 
 This exercise is meant showcase your creativity and talent in problem solving against a real world scenario. To that end it should not consume your every waking moment. We recommend at max spending 3 evenings of time on the exercise.
 
-## Requirements
+## Frame works and Librarys used
 
-- Login to the app via email and password
-- Restrict access to valid a User
-- Once logged in show the details of the user on the page
-- Authorized users can check their account balance
-- Allow the user to change their details
-- lowdb (DB) -> https://github.com/typicode/lowdb
-- node.js -> http://nodejs.org/
-
-## Bonus Points
-
-- Fully responsive UI
-- Unit Tests of the API
-- Functional Tests of the UI
+ - React
+ - axios
+ - framer motion
+ - node.js
+ - express
+ - lowdb 
